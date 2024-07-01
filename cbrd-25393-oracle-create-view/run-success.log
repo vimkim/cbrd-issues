@@ -1,0 +1,1237 @@
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_rewrite_for_dblink+0x67) [0x7f801be5e4c6]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x2c6) [0x7f801b87ec77]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_CREATE_ENTITY                                                 with address of 0x55ee3e231290
+
+    At pt_apply_create_entity(), `p->info.create_entity.entity_name` is
+----PT_NAME [ a_view ]                                           with address of 0x55ee3e22f8c0
+
+    At pt_apply_create_entity(), `p->info.create_entity.attr_def_list` is
+----PT_ATTR_DEF                                                  with address of 0x55ee3e22fc70
+
+        At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+--------PT_NAME [ ID ]                                           with address of 0x55ee3e22fa98
+
+        At pt_walk_private(), `node->next` is
+--------PT_ATTR_DEF                                              with address of 0x55ee3e230020
+
+            At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+------------PT_NAME [ PHONE ]                                    with address of 0x55ee3e22fe48
+
+            At pt_walk_private(), `node->next` is
+------------PT_ATTR_DEF                                          with address of 0x55ee3e2305a8
+
+                At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+----------------PT_NAME [ EXTRA ]                                with address of 0x55ee3e2301f8
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e2303d0
+
+    At pt_apply_create_entity(), `p->info.create_entity.as_query_list` is
+----PT_SELECT                                                    with address of 0x55ee3e230780
+
+        At pt_apply_select(), `p->info.query.q.select.list` is
+--------PT_NAME [ id ]                                           with address of 0x55ee3e230958
+
+            At pt_walk_private(), `node->next` is
+------------PT_NAME [ phone ]                                    with address of 0x55ee3e230b30
+
+                At pt_walk_private(), `node->next` is
+----------------PT_VALUE                                         with address of 0x55ee3e230d08
+
+        At pt_apply_select(), `p->info.query.q.select.from` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ a_tbl ]                                    with address of 0x55ee3e230ee0
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_rewrite_for_dblink+0x14f) [0x7f801be5e5ae]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x2c6) [0x7f801b87ec77]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_CREATE_ENTITY                                                 with address of 0x55ee3e231290
+
+    At pt_apply_create_entity(), `p->info.create_entity.entity_name` is
+----PT_NAME [ a_view ]                                           with address of 0x55ee3e22f8c0
+
+    At pt_apply_create_entity(), `p->info.create_entity.attr_def_list` is
+----PT_ATTR_DEF                                                  with address of 0x55ee3e22fc70
+
+        At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+--------PT_NAME [ ID ]                                           with address of 0x55ee3e22fa98
+
+        At pt_walk_private(), `node->next` is
+--------PT_ATTR_DEF                                              with address of 0x55ee3e230020
+
+            At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+------------PT_NAME [ PHONE ]                                    with address of 0x55ee3e22fe48
+
+            At pt_walk_private(), `node->next` is
+------------PT_ATTR_DEF                                          with address of 0x55ee3e2305a8
+
+                At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+----------------PT_NAME [ EXTRA ]                                with address of 0x55ee3e2301f8
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e2303d0
+
+    At pt_apply_create_entity(), `p->info.create_entity.as_query_list` is
+----PT_SELECT                                                    with address of 0x55ee3e230780
+
+        At pt_apply_select(), `p->info.query.q.select.list` is
+--------PT_NAME [ id ]                                           with address of 0x55ee3e230958
+
+            At pt_walk_private(), `node->next` is
+------------PT_NAME [ phone ]                                    with address of 0x55ee3e230b30
+
+                At pt_walk_private(), `node->next` is
+----------------PT_VALUE                                         with address of 0x55ee3e230d08
+
+        At pt_apply_select(), `p->info.query.q.select.from` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At parser_walk_tree(), `node` is
+--------PT_SELECT                                                with address of 0x55ee3e230780
+
+            At pt_apply_select(), `p->info.query.q.select.list` is
+------------PT_NAME [ id ]                                       with address of 0x55ee3e230958
+
+                At pt_walk_private(), `node->next` is
+----------------PT_NAME [ phone ]                                with address of 0x55ee3e230b30
+
+                    At pt_walk_private(), `node->next` is
+--------------------PT_VALUE                                     with address of 0x55ee3e230d08
+
+            At pt_apply_select(), `p->info.query.q.select.from` is
+------------PT_SPEC                                              with address of 0x55ee3e2310b8
+
+                At pt_apply_spec(), `p->info.spec.entity_name` is
+----------------PT_NAME [ a_tbl ]                                with address of 0x55ee3e230ee0
+
+        At parser_walk_tree(), `node` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ a_tbl ]                                    with address of 0x55ee3e230ee0
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x335) [0x7f801b87ece6]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_CREATE_ENTITY                                                 with address of 0x55ee3e231290
+
+    At pt_apply_create_entity(), `p->info.create_entity.entity_name` is
+----PT_NAME [ a_view ]                                           with address of 0x55ee3e22f8c0
+
+    At pt_apply_create_entity(), `p->info.create_entity.attr_def_list` is
+----PT_ATTR_DEF                                                  with address of 0x55ee3e22fc70
+
+        At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+--------PT_NAME [ ID ]                                           with address of 0x55ee3e22fa98
+
+        At pt_walk_private(), `node->next` is
+--------PT_ATTR_DEF                                              with address of 0x55ee3e230020
+
+            At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+------------PT_NAME [ PHONE ]                                    with address of 0x55ee3e22fe48
+
+            At pt_walk_private(), `node->next` is
+------------PT_ATTR_DEF                                          with address of 0x55ee3e2305a8
+
+                At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+----------------PT_NAME [ EXTRA ]                                with address of 0x55ee3e2301f8
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e2303d0
+
+    At pt_apply_create_entity(), `p->info.create_entity.as_query_list` is
+----PT_SELECT                                                    with address of 0x55ee3e230780
+
+        At pt_apply_select(), `p->info.query.q.select.list` is
+--------PT_NAME [ id ]                                           with address of 0x55ee3e230958
+
+            At pt_walk_private(), `node->next` is
+------------PT_NAME [ phone ]                                    with address of 0x55ee3e230b30
+
+                At pt_walk_private(), `node->next` is
+----------------PT_VALUE                                         with address of 0x55ee3e230d08
+
+        At pt_apply_select(), `p->info.query.q.select.from` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ a_tbl ]                                    with address of 0x55ee3e230ee0
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc12298) [0x7f801be74298]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_resolve_names+0x106) [0x7f801bdeecd0]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1c8a9) [0x7f801be7e8a9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc122e9) [0x7f801be742e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At parser_walk_tree(), `node` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.range_var` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231640
+
+        At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_resolve_names+0x1f6) [0x7f801bdeedc0]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1c8a9) [0x7f801be7e8a9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc122e9) [0x7f801be742e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.range_var` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231640
+
+        At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_resolve_names+0x256) [0x7f801bdeee20]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1c8a9) [0x7f801be7e8a9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc122e9) [0x7f801be742e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_resolve_names+0x2e9) [0x7f801bdeeeb3]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1c8a9) [0x7f801be7e8a9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc122e9) [0x7f801be742e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e231818
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.range_var` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231640
+
+        At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_resolve_names+0x344) [0x7f801bdeef0e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1c8a9) [0x7f801be7e8a9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc122e9) [0x7f801be742e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e231818
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.range_var` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231640
+
+        At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1cab7) [0x7f801be7eab7]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc122e9) [0x7f801be742e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e231818
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.range_var` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231640
+
+        At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1cb34) [0x7f801be7eb34]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc122e9) [0x7f801be742e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e231818
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.range_var` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231640
+
+        At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1cba0) [0x7f801be7eba0]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc122e9) [0x7f801be742e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e231818
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.range_var` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231640
+
+        At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231468
+
+    At parser_walk_tree(), `node` is
+----PT_SELECT                                                    with address of 0x55ee3e230780
+
+        At pt_apply_select(), `p->info.query.q.select.list` is
+--------PT_NAME [ id ]                                           with address of 0x55ee3e230958
+
+            At pt_walk_private(), `node->next` is
+------------PT_NAME [ phone ]                                    with address of 0x55ee3e230b30
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e231818
+
+                At pt_walk_private(), `node->next` is
+----------------PT_VALUE                                         with address of 0x55ee3e230d08
+
+        At pt_apply_select(), `p->info.query.q.select.from` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e230ee0
+
+            At pt_apply_spec(), `p->info.spec.range_var` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231640
+
+            At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231468
+
+        At parser_walk_tree(), `node` is
+--------PT_NODE_POINTER                                          with address of 0x55ee3e2319f0
+
+    At parser_walk_tree(), `node` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e231818
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At parser_walk_tree(), `node` is
+----PT_SELECT                                                    with address of 0x55ee3e230780
+
+        At pt_apply_select(), `p->info.query.q.select.list` is
+--------PT_NAME [ id ]                                           with address of 0x55ee3e230958
+
+            At pt_walk_private(), `node->next` is
+------------PT_NAME [ phone ]                                    with address of 0x55ee3e230b30
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e231818
+
+                At pt_walk_private(), `node->next` is
+----------------PT_VALUE                                         with address of 0x55ee3e230d08
+
+        At pt_apply_select(), `p->info.query.q.select.from` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e230ee0
+
+            At pt_apply_spec(), `p->info.spec.range_var` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231640
+
+            At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231468
+
+        At parser_walk_tree(), `node` is
+--------PT_NODE_POINTER                                          with address of 0x55ee3e2319f0
+
+    At parser_walk_leaves(), `walk->data_type` is
+----PT_DATA_TYPE                                                 with address of 0x55ee3e231818
+
+    At parser_walk_tree(), `node` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e231818
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At parser_walk_tree(), `node` is
+----PT_SELECT                                                    with address of 0x55ee3e230780
+
+        At pt_apply_select(), `p->info.query.q.select.list` is
+--------PT_NAME [ id ]                                           with address of 0x55ee3e230958
+
+            At pt_walk_private(), `node->next` is
+------------PT_NAME [ phone ]                                    with address of 0x55ee3e230b30
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e231818
+
+                At pt_walk_private(), `node->next` is
+----------------PT_VALUE                                         with address of 0x55ee3e230d08
+
+        At pt_apply_select(), `p->info.query.q.select.from` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e230ee0
+
+            At pt_apply_spec(), `p->info.spec.range_var` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231640
+
+            At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231468
+
+    At parser_walk_tree(), `node` is
+----PT_SELECT                                                    with address of 0x55ee3e230780
+
+        At pt_apply_select(), `p->info.query.q.select.list` is
+--------PT_NAME [ id ]                                           with address of 0x55ee3e230958
+
+            At pt_walk_private(), `node->next` is
+------------PT_NAME [ phone ]                                    with address of 0x55ee3e230b30
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e231818
+
+                At pt_walk_private(), `node->next` is
+----------------PT_VALUE                                         with address of 0x55ee3e230d08
+
+        At pt_apply_select(), `p->info.query.q.select.from` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e230ee0
+
+            At pt_apply_spec(), `p->info.spec.range_var` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231640
+
+            At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1cc11) [0x7f801be7ec11]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc122e9) [0x7f801be742e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e231818
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.range_var` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231640
+
+        At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc24089) [0x7f801be86089]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1238c) [0x7f801be7438c]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e231818
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.range_var` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231640
+
+        At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc10c16) [0x7f801be72c16]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc12745) [0x7f801be74745]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x55ee3e230780
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_NAME [ id ]                                               with address of 0x55ee3e230958
+
+        At pt_walk_private(), `node->next` is
+--------PT_NAME [ phone ]                                        with address of 0x55ee3e230b30
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e231818
+
+            At pt_walk_private(), `node->next` is
+------------PT_VALUE                                             with address of 0x55ee3e230d08
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x55ee3e2310b8
+
+        At pt_apply_spec(), `p->info.spec.entity_name` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e230ee0
+
+        At pt_apply_spec(), `p->info.spec.range_var` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231640
+
+        At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+--------PT_NAME [ dba.a_tbl ]                                    with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_copy_tree_list+0x64) [0x7f801be0a075]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc10e64) [0x7f801be72e64]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc12745) [0x7f801be74745]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc13e61) [0x7f801be75e61]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1d663) [0x7f801be7f663]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f801be7f99f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f801bdbdcd4]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f801b87ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_DATA_TYPE                                                     with address of 0x55ee3e231818
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc71993) [0x7f801bed3993]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc71ce8) [0x7f801bed3ce8]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc717df) [0x7f801bed37df]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z12mq_translateP14parser_contextP11parser_node+0xf5) [0x7f801bed3e2b]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x639) [0x7f801b87efea]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f801b87f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ec1a) [0x7f801b7a0c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_CREATE_ENTITY                                                 with address of 0x55ee3e231290
+
+    At pt_apply_create_entity(), `p->info.create_entity.entity_name` is
+----PT_NAME [ dba.a_view ]                                       with address of 0x55ee3e22f8c0
+
+    At pt_apply_create_entity(), `p->info.create_entity.attr_def_list` is
+----PT_ATTR_DEF                                                  with address of 0x55ee3e22fc70
+
+        At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+--------PT_NAME [ ID ]                                           with address of 0x55ee3e22fa98
+
+        At pt_walk_private(), `node->next` is
+--------PT_ATTR_DEF                                              with address of 0x55ee3e230020
+
+            At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+------------PT_NAME [ PHONE ]                                    with address of 0x55ee3e22fe48
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e2319f0
+
+            At pt_walk_private(), `node->next` is
+------------PT_ATTR_DEF                                          with address of 0x55ee3e2305a8
+
+                At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+----------------PT_NAME [ EXTRA ]                                with address of 0x55ee3e2301f8
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e2303d0
+
+    At pt_apply_create_entity(), `p->info.create_entity.as_query_list` is
+----PT_SELECT                                                    with address of 0x55ee3e230780
+
+        At pt_apply_select(), `p->info.query.q.select.list` is
+--------PT_NAME [ id ]                                           with address of 0x55ee3e230958
+
+            At pt_walk_private(), `node->next` is
+------------PT_NAME [ phone ]                                    with address of 0x55ee3e230b30
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e231818
+
+                At pt_walk_private(), `node->next` is
+----------------PT_VALUE                                         with address of 0x55ee3e230d08
+
+        At pt_apply_select(), `p->info.query.q.select.from` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e230ee0
+
+            At pt_apply_spec(), `p->info.spec.range_var` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231640
+
+            At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x623559) [0x7f801b885559]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x61ed64) [0x7f801b880d64]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_execute_statement_localP10db_sessioniPP15db_query_result+0x6c) [0x7f801b883e1c]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_execute_statement+0x75) [0x7f801b883f01]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ee8f) [0x7f801b7a0e8f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_CREATE_ENTITY                                                 with address of 0x55ee3e231290
+
+    At pt_apply_create_entity(), `p->info.create_entity.entity_name` is
+----PT_NAME [ dba.a_view ]                                       with address of 0x55ee3e22f8c0
+
+    At pt_apply_create_entity(), `p->info.create_entity.attr_def_list` is
+----PT_ATTR_DEF                                                  with address of 0x55ee3e22fc70
+
+        At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+--------PT_NAME [ ID ]                                           with address of 0x55ee3e22fa98
+
+        At pt_walk_private(), `node->next` is
+--------PT_ATTR_DEF                                              with address of 0x55ee3e230020
+
+            At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+------------PT_NAME [ PHONE ]                                    with address of 0x55ee3e22fe48
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e2319f0
+
+            At pt_walk_private(), `node->next` is
+------------PT_ATTR_DEF                                          with address of 0x55ee3e2305a8
+
+                At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+----------------PT_NAME [ EXTRA ]                                with address of 0x55ee3e2301f8
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e2303d0
+
+    At pt_apply_create_entity(), `p->info.create_entity.as_query_list` is
+----PT_SELECT                                                    with address of 0x55ee3e230780
+
+        At pt_apply_select(), `p->info.query.q.select.list` is
+--------PT_NAME [ id ]                                           with address of 0x55ee3e230958
+
+            At pt_walk_private(), `node->next` is
+------------PT_NAME [ phone ]                                    with address of 0x55ee3e230b30
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e231818
+
+                At pt_walk_private(), `node->next` is
+----------------PT_VALUE                                         with address of 0x55ee3e230d08
+
+        At pt_apply_select(), `p->info.query.q.select.from` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e230ee0
+
+            At pt_apply_spec(), `p->info.spec.range_var` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231640
+
+            At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231468
+
+
+
+##########################################################################################
+
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f801be08270]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f801be0836e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f801be09bb5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_free_tree+0x43) [0x7f801be0a63a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_execute_statement_localP10db_sessioniPP15db_query_result+0xb8) [0x7f801b883e68]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_execute_statement+0x75) [0x7f801b883f01]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53ee8f) [0x7f801b7a0e8f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53c702) [0x7f801b79e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f801b7a2dbd]
+csql(main+0x86b) [0x55ee377c70b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f801c9ecd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f801c9ece40]
+csql(_start+0x25) [0x55ee377c64e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_CREATE_ENTITY                                                 with address of 0x55ee3e231290
+
+    At pt_apply_create_entity(), `p->info.create_entity.entity_name` is
+----PT_NAME [ dba.a_view ]                                       with address of 0x55ee3e22f8c0
+
+    At pt_apply_create_entity(), `p->info.create_entity.attr_def_list` is
+----PT_ATTR_DEF                                                  with address of 0x55ee3e22fc70
+
+        At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+--------PT_NAME [ ID ]                                           with address of 0x55ee3e22fa98
+
+        At pt_walk_private(), `node->next` is
+--------PT_ATTR_DEF                                              with address of 0x55ee3e230020
+
+            At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+------------PT_NAME [ PHONE ]                                    with address of 0x55ee3e22fe48
+
+            At pt_walk_private(), `node->data_type` is
+------------PT_DATA_TYPE                                         with address of 0x55ee3e2319f0
+
+            At pt_walk_private(), `node->next` is
+------------PT_ATTR_DEF                                          with address of 0x55ee3e2305a8
+
+                At pt_apply_attr_def(), `p->info.attr_def.attr_name` is
+----------------PT_NAME [ EXTRA ]                                with address of 0x55ee3e2301f8
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e2303d0
+
+    At pt_apply_create_entity(), `p->info.create_entity.as_query_list` is
+----PT_SELECT                                                    with address of 0x55ee3e230780
+
+        At pt_apply_select(), `p->info.query.q.select.list` is
+--------PT_NAME [ id ]                                           with address of 0x55ee3e230958
+
+            At pt_walk_private(), `node->next` is
+------------PT_NAME [ phone ]                                    with address of 0x55ee3e230b30
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x55ee3e231818
+
+                At pt_walk_private(), `node->next` is
+----------------PT_VALUE                                         with address of 0x55ee3e230d08
+
+        At pt_apply_select(), `p->info.query.q.select.from` is
+--------PT_SPEC                                                  with address of 0x55ee3e2310b8
+
+            At pt_apply_spec(), `p->info.spec.entity_name` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e230ee0
+
+            At pt_apply_spec(), `p->info.spec.range_var` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231640
+
+            At pt_apply_spec(), `p->info.spec.flat_entity_list` is
+------------PT_NAME [ dba.a_tbl ]                                with address of 0x55ee3e231468
+
+Execute OK. (0.079901 sec) Committed. (0.001549 sec) 

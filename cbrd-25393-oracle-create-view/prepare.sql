@@ -9,6 +9,7 @@ INSERT INTO a_tbl VALUES(1,'111-1111'), (2,'222-2222'), (3, '333-3333'), (4, NUL
 
 select * from a_tbl;
 
+/*
 CREATE view a_view (
     "ID", "PHONE", "EXTRA"
 ) AS
@@ -17,5 +18,6 @@ id,
 phone,
 NULL AS extra
 FROM a_tbl;
+*/
 
-select * from a_view;
+-- select * from a_view;
