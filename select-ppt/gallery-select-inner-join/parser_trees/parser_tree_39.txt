@@ -1,0 +1,23 @@
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f44788f84f0]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f44788f85e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f44788f9daf]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x622b9e) [0x7f4478375b9e]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_set_statement_auto_commit+0x314) [0x7f4478375a56]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53de56) [0x7f4478290e56]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53b702) [0x7f447828e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f4478292dbd]
+csql(main+0x86b) [0x5614fa60f0b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f44794dfd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f44794dfe40]
+csql(_start+0x25) [0x5614fa60e4e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_NAME [ host_year ]                                            with address of 0x56150067bb20
+
+    At pt_walk_private(), `node->next` is
+----PT_NAME [ host_nation ]                                      with address of 0x56150067c0a8
+
+        At pt_walk_private(), `node->data_type` is
+--------PT_DATA_TYPE                                             with address of 0x56150067b948

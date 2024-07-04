@@ -1,0 +1,29 @@
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f44788f84f0]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f44788f85e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f44788f9daf]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc093bd) [0x7f447895c3bd]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc092ef) [0x7f447895c2ef]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc26060) [0x7f4478979060]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1bb3c) [0x7f447896eb3c]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f447896fbe3]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f44788adf53]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f447836ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f447836f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53dc1a) [0x7f4478290c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53b702) [0x7f447828e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f4478292dbd]
+csql(main+0x86b) [0x5614fa60f0b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f44794dfd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f44794dfe40]
+csql(_start+0x25) [0x5614fa60e4e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_EXPR                                                          with address of 0x56150067e3b0
+
+    At pt_apply_expr(), `p->info.expr.arg1` is
+----PT_NAME [ host_year ]                                        with address of 0x56150067de28
+
+    At pt_apply_expr(), `p->info.expr.arg2` is
+----PT_VALUE                                                     with address of 0x56150067e1d8

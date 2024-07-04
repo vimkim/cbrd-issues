@@ -1,0 +1,162 @@
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f44788f84f0]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f44788f85e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f44788f9daf]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_resolve_names+0x256) [0x7f44788df0a0]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xc1baed) [0x7f447896eaed]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z17pt_semantic_checkP14parser_contextP11parser_node+0x32) [0x7f447896fbe3]
+/home/vimkim/CUBRID/lib/libcubridsa.so(pt_compile+0xfb) [0x7f44788adf53]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z26db_compile_statement_localP10db_session+0x47c) [0x7f447836ee2d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_compile_statement+0x65) [0x7f447836f2d2]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53dc1a) [0x7f4478290c1a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53b702) [0x7f447828e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f4478292dbd]
+csql(main+0x86b) [0x5614fa60f0b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f44794dfd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f44794dfe40]
+csql(_start+0x25) [0x5614fa60e4e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_SELECT                                                        with address of 0x56150067b770
+
+    At pt_apply_select(), `p->info.query.q.select.list` is
+----PT_DOT_                                                      with address of 0x56150067bcf8
+
+        At parser_walk_tree(), `node` is
+--------PT_NAME [ h ]                                            with address of 0x56150067b948
+
+        At parser_walk_tree(), `node` is
+--------PT_NAME [ dba.history ]                                  with address of 0x56150067e588
+
+        At parser_walk_tree(), `node` is
+--------PT_DOT_                                                  with address of 0x56150067bcf8
+
+            At pt_apply_dot(), `p->info.dot.arg1` is
+------------PT_NAME [  ]                                         with address of 0x56150067e938
+
+                At pt_walk_private(), `node->data_type` is
+----------------PT_DATA_TYPE                                     with address of 0x56150067b948
+
+                    At pt_apply_datatype(), `p->info.data_type.entity` is
+--------------------PT_NAME [ dba.history ]                      with address of 0x56150067eb10
+
+        At pt_walk_private(), `node->next` is
+--------PT_DOT_                                                  with address of 0x56150067c280
+
+            At parser_walk_tree(), `node` is
+------------PT_NAME [ o ]                                        with address of 0x56150067bed0
+
+            At parser_walk_tree(), `node` is
+------------PT_NAME [ dba.olympic ]                              with address of 0x56150067e760
+
+            At parser_walk_tree(), `node` is
+------------PT_DOT_                                              with address of 0x56150067c280
+
+                At pt_apply_dot(), `p->info.dot.arg1` is
+----------------PT_NAME [  ]                                     with address of 0x56150067bcf8
+
+                    At pt_walk_private(), `node->data_type` is
+--------------------PT_DATA_TYPE                                 with address of 0x56150067bed0
+
+                        At pt_apply_datatype(), `p->info.data_type.entity` is
+------------------------PT_NAME [ dba.olympic ]                  with address of 0x56150067e938
+
+    At pt_apply_select(), `p->info.query.q.select.from` is
+----PT_SPEC                                                      with address of 0x56150067c630
+
+        At pt_walk_private(), `node->next` is
+--------PT_SPEC                                                  with address of 0x56150067cbb8
+
+            At parser_walk_tree(), `node` is
+------------PT_EXPR                                              with address of 0x56150067da78
+
+                At pt_apply_expr(), `p->info.expr.arg1` is
+----------------PT_DOT_                                          with address of 0x56150067d318
+
+                    At pt_apply_dot(), `p->info.dot.arg1` is
+--------------------PT_NAME [ h ]                                with address of 0x56150067cf68
+
+                    At pt_apply_dot(), `p->info.dot.arg2` is
+--------------------PT_NAME [ host_year ]                        with address of 0x56150067d140
+
+                At pt_apply_expr(), `p->info.expr.arg2` is
+----------------PT_DOT_                                          with address of 0x56150067d8a0
+
+                    At pt_apply_dot(), `p->info.dot.arg1` is
+--------------------PT_NAME [ o ]                                with address of 0x56150067d4f0
+
+                    At pt_apply_dot(), `p->info.dot.arg2` is
+--------------------PT_NAME [ host_year ]                        with address of 0x56150067d6c8
+
+            At parser_walk_tree(), `node` is
+------------PT_EXPR                                              with address of 0x56150067da78
+
+                At pt_apply_expr(), `p->info.expr.arg1` is
+----------------PT_DOT_                                          with address of 0x56150067d318
+
+                    At parser_walk_tree(), `node` is
+--------------------PT_NAME [ h ]                                with address of 0x56150067cf68
+
+                    At parser_walk_tree(), `node` is
+--------------------PT_NAME [ dba.history ]                      with address of 0x56150067e588
+
+                    At parser_walk_tree(), `node` is
+--------------------PT_DOT_                                      with address of 0x56150067d318
+
+                        At pt_apply_dot(), `p->info.dot.arg1` is
+------------------------PT_NAME [  ]                             with address of 0x56150067c280
+
+                            At pt_walk_private(), `node->data_type` is
+----------------------------PT_DATA_TYPE                         with address of 0x56150067cf68
+
+                                At pt_apply_datatype(), `p->info.data_type.entity` is
+--------------------------------PT_NAME [ dba.history ]          with address of 0x56150067bcf8
+
+                At pt_apply_expr(), `p->info.expr.arg2` is
+----------------PT_DOT_                                          with address of 0x56150067d8a0
+
+                    At parser_walk_tree(), `node` is
+--------------------PT_NAME [ o ]                                with address of 0x56150067d4f0
+
+                    At parser_walk_tree(), `node` is
+--------------------PT_NAME [ dba.olympic ]                      with address of 0x56150067e760
+
+                    At parser_walk_tree(), `node` is
+--------------------PT_DOT_                                      with address of 0x56150067d8a0
+
+                        At pt_apply_dot(), `p->info.dot.arg1` is
+------------------------PT_NAME [  ]                             with address of 0x56150067d318
+
+                            At pt_walk_private(), `node->data_type` is
+----------------------------PT_DATA_TYPE                         with address of 0x56150067d4f0
+
+                                At pt_apply_datatype(), `p->info.data_type.entity` is
+--------------------------------PT_NAME [ dba.olympic ]          with address of 0x56150067c280
+
+    At pt_apply_select(), `p->info.query.q.select.where` is
+----PT_EXPR                                                      with address of 0x56150067e3b0
+
+        At pt_apply_expr(), `p->info.expr.arg1` is
+--------PT_DOT_                                                  with address of 0x56150067e000
+
+            At parser_walk_tree(), `node` is
+------------PT_NAME [ o ]                                        with address of 0x56150067dc50
+
+            At parser_walk_tree(), `node` is
+------------PT_NAME [ dba.olympic ]                              with address of 0x56150067e760
+
+            At parser_walk_tree(), `node` is
+------------PT_DOT_                                              with address of 0x56150067e000
+
+                At pt_apply_dot(), `p->info.dot.arg1` is
+----------------PT_NAME [  ]                                     with address of 0x56150067d8a0
+
+                    At pt_walk_private(), `node->data_type` is
+--------------------PT_DATA_TYPE                                 with address of 0x56150067dc50
+
+                        At pt_apply_datatype(), `p->info.data_type.entity` is
+------------------------PT_NAME [ dba.olympic ]                  with address of 0x56150067d318
+
+        At pt_apply_expr(), `p->info.expr.arg2` is
+--------PT_VALUE                                                 with address of 0x56150067e1d8

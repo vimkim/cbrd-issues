@@ -1,0 +1,52 @@
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z15printStackTracev+0x42) [0x7f44788f84f0]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z21prettyPrintStackTracev+0x2c) [0x7f44788f85e9]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_walk_tree+0x9f) [0x7f44788f9daf]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xae21be) [0x7f44788351be]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3b06a) [0x7f447888e06a]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3b987) [0x7f447888e987]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3ad93) [0x7f447888dd93]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3ae22) [0x7f447888de22]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3b987) [0x7f447888e987]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3ad93) [0x7f447888dd93]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3ae22) [0x7f447888de22]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3b987) [0x7f447888e987]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3ad93) [0x7f447888dd93]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3ad66) [0x7f447888dd66]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3ad66) [0x7f447888dd66]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3ad66) [0x7f447888dd66]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0xb3bad5) [0x7f447888ead5]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql_yyparse+0x6ed) [0x7f447889025d]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_main+0x10f) [0x7f447889321b]
+/home/vimkim/CUBRID/lib/libcubridsa.so(parser_parse_string_with_escapes+0x226) [0x7f44788faedf]
+/home/vimkim/CUBRID/lib/libcubridsa.so(_Z20db_open_buffer_localPKc+0xa1) [0x7f447836e158]
+/home/vimkim/CUBRID/lib/libcubridsa.so(db_open_buffer+0x97) [0x7f447836e218]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53da7f) [0x7f4478290a7f]
+/home/vimkim/CUBRID/lib/libcubridsa.so(+0x53b702) [0x7f447828e702]
+/home/vimkim/CUBRID/lib/libcubridsa.so(csql+0x6ae) [0x7f4478292dbd]
+csql(main+0x86b) [0x5614fa60f0b2]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f44794dfd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f44794dfe40]
+csql(_start+0x25) [0x5614fa60e4e5]
+
+----------------------------------
+
+At parser_walk_tree(), `node` is
+PT_EXPR                                                          with address of 0x56150067da78
+
+    At pt_apply_expr(), `p->info.expr.arg1` is
+----PT_DOT_                                                      with address of 0x56150067d318
+
+        At pt_apply_dot(), `p->info.dot.arg1` is
+--------PT_NAME [ h ]                                            with address of 0x56150067cf68
+
+        At pt_apply_dot(), `p->info.dot.arg2` is
+--------PT_NAME [ host_year ]                                    with address of 0x56150067d140
+
+    At pt_apply_expr(), `p->info.expr.arg2` is
+----PT_DOT_                                                      with address of 0x56150067d8a0
+
+        At pt_apply_dot(), `p->info.dot.arg1` is
+--------PT_NAME [ o ]                                            with address of 0x56150067d4f0
+
+        At pt_apply_dot(), `p->info.dot.arg2` is
+--------PT_NAME [ host_year ]                                    with address of 0x56150067d6c8
