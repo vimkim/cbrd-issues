@@ -22,7 +22,7 @@ def main():
     json_data = json.loads(input_data)
     
     dot = Digraph()
-    dot.attr()
+    dot.attr(rankdir='LR')
 
     parse_node(json_data, dot)
     
